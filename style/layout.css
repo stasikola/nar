@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body p {
+/* body p {
   margin: 52px;
 }
 
@@ -42,4 +42,114 @@ ul li {
 
 ul li:not(:last-of-type) {
   border-right: 1px solid black;
+} */
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote,
+hr {
+  width: 700px;
+  margin: 0 auto;
+}
+img {
+  width: 1024px;
+  margin: 0 auto;
+  display: block;
+}
+
+p,
+ul,
+ol,
+blockquote {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+h1 + hr + p {
+  color: rgb(0, 0, 0, 0.4);
+}
+a {
+  color: inherit;
+}
+h1 {
+  margin: 50px auto;
+  font-size: 38px;
+  line-height: 45px;
+}
+h2 {
+  margin-top: 40px;
+  font-size: 32px;
+  line-height: 36px;
+}
+h3 {
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 32px;
+}
+h4 {
+  margin-top: 32px;
+  font-size: 24px;
+  line-height: 28px;
+}
+h5 {
+  margin-top: 28px;
+  font-size: 22px;
+  line-height: 24px;
+}
+hr {
+  margin: 12px auto;
+  width: 1024px;
+}
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p {
+  margin-top: 10px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 32px;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 32px;
+}
+li {
+  margin: 10px auto;
+}
+
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+
+blockquote::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: -17px;
 }
