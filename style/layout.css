@@ -212,3 +212,78 @@ blockquote::before {
   transition: all ease 0.6s;
   color: black;
 }
+
+/* стили для абоут */
+#about {
+  overflow-x: hidden;
+}
+/* #about::after {
+  content: "";
+  background-image: url("../image/1440.png");
+  width: 1440px;
+  height: 3120px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  opacity: 0.2;
+} */
+#about section {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#about section div {
+  width: 48%;
+}
+
+#about h2 {
+  margin: 0;
+  width: 100%;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 46px;
+}
+#about p {
+  margin: 20px 0;
+  font-size: 28px;
+  line-height: 38px;
+
+  width: 100%;
+}
+
+#about #sc1 {
+  margin-top: 88px;
+}
+
+#about #sc1 img {
+  width: 1100px;
+}
+#sc1 div:nth-of-type(1) {
+  padding: 40px 0 0 110px;
+}
+
+#sc2 img {
+  width: 670px;
+  padding-left: 20px;
+}
+#about #sc2 {
+  margin-top: 88px;
+}
+#sc2 div:nth-of-type(2) {
+  padding: 55px 20px 0 10px;
+}
+#about #sc3 {
+  margin-top: 190px;
+  border-bottom: 1px solid #eee;
+}
+#sc3 img {
+  width: 1050px;
+  margin: 10px 0 0 10px;
+  border-left: 1px solid #eee;
+}
+#sc3 div:nth-of-type(1) {
+  padding-left: 110px;
+}
