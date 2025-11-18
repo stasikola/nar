@@ -51,104 +51,104 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+#article h1,
+#article h2,
+#article h3,
+#article h4,
+#article h5 {
   font-family: "PT Sans Caption", sans-serif;
   font-weight: bold;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-blockquote,
-hr {
+#article h1,
+#article h2,
+#article h3,
+#article h4,
+#article h5,
+#article h6,
+#article p,
+#article ul,
+#article ol,
+#article blockquote,
+#article hr {
   width: 700px;
   margin: 0 auto;
 }
-img {
+#article img {
   width: 1024px;
   margin: 0 auto;
   display: block;
 }
 
-p,
-ul,
-ol,
-blockquote {
+#article p,
+#article ul,
+#article ol,
+#article blockquote {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 30px;
 }
-h1 + hr + p {
+#article h1 + hr + p {
   color: rgb(0, 0, 0, 0.4);
 }
-a {
+#article a {
   color: inherit;
 }
-h1 {
+#article h1 {
   margin: 50px auto;
   font-size: 38px;
   line-height: 45px;
 }
-h2 {
+#article h2 {
   margin-top: 40px;
   font-size: 32px;
   line-height: 36px;
 }
-h3 {
+#article h3 {
   margin-top: 36px;
   font-size: 28px;
   line-height: 32px;
 }
-h4 {
+#article h4 {
   margin-top: 32px;
   font-size: 24px;
   line-height: 28px;
 }
-h5 {
+#article h5 {
   margin-top: 28px;
   font-size: 22px;
   line-height: 24px;
 }
-hr {
+#article hr {
   margin: 12px auto;
   width: 1024px;
 }
 
-h2 + p,
-h3 + p,
-h4 + p,
-h5 + p {
+#article h2 + p,
+#article h3 + p,
+#article h4 + p,
+#article h5 + p {
   margin-top: 10px;
 }
-ul {
+#article ul {
   list-style-type: disc;
   padding-left: 32px;
 }
 
-ol {
+#article ol {
   list-style-type: decimal;
   padding-left: 32px;
 }
-li {
+#article li {
   margin: 10px auto;
 }
 
-blockquote {
+#article blockquote {
   font-style: italic;
   position: relative;
 }
 
-blockquote::before {
+#article blockquote::before {
   content: "";
   width: 3px;
   height: 100%;
@@ -159,6 +159,7 @@ blockquote::before {
 }
 
 /* сайдбар */
+
 .sidebar {
   width: 280px;
   position: fixed;
@@ -171,6 +172,7 @@ blockquote::before {
   opacity: 1;
   transition: all ease 0.6s;
 }
+#article .sidebar ol,
 .sidebar ol {
   width: 100%;
   font-size: 15px;
@@ -192,12 +194,24 @@ blockquote::before {
 }
 
 /* стили для верхнего меню */
+#article .menubar img,
+.menubar img {
+  width: 250px;
+  margin: 0;
+}
 .menubar {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 46px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 #000;
 }
 .menubar img {
   width: 350px;
@@ -326,4 +340,43 @@ blockquote::before {
 #sc4 a:nth-of-type(2):hover {
   background-color: black;
   border: 1px solid black;
+}
+
+/* главная страница с карточками */
+.main {
+  background-color: #eee;
+}
+
+.main .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6vw;
+  background-color: #fff;
+  width: 54vw;
+  padding: 1.6vw;
+  text-decoration: none;
+  color: #000000;
+}
+.main section {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  align-items: center;
+  padding-bottom: 2vw;
+}
+.main h2 {
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+.main p {
+  font-size: 1.25vw;
+}
+.main .cardimg {
+  width: 100%;
+  height: 15.6vw;
+  background-image: url("../image/narkomfin.jpg");
+  background-size: cover;
+  background-color: #fff;
+  /* background-repeat: no-repeat; */
 }
